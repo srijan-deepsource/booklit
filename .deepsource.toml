@@ -1,20 +1,8 @@
 version = 1
 
-test_patterns = ["tests/**"]
-
-exclude_patterns = [
-    "**/bindata.go",
-    "errhtml/errors.css",
-    "docs/css/*.css"
-]
-
 [[analyzers]]
 name = "go"
 enabled = true
 
   [analyzers.meta]
-  import_paths = ["github.com/vito/booklit"]
-
-[[analyzers]]
-name = "test-coverage"
-enabled = true
+  import_paths = ["github.com/srijan-deepsource/booklit"]
